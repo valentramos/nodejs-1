@@ -1,0 +1,4 @@
+Iniciar el Servidor una vez instalado Node JS en la version mas estable posible
+comando: 
+
+node index.js
