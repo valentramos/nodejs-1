@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pizarra colaborativa - NodeJs + Socket.io - Sidertia</title>
+		<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		html, body{
+			background-color: #fff;
+			overflow:hidden;
+		}
+		#lienzo{
+			background-color: #ccc;
+		}
+		#cursores{
+			position:relative;
+		}
+		#cursores .cursor{
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			border: 2px solid red;
+
+			border-radius: 4px;
+			margin-left: -4px;
+			margin-top: -4px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="cursores">
+
+		</div>
+
+		<canvas id="lienzo" width="1024" height="768">
+			Tu navegador no soporta canvas
+		</canvas>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
